@@ -14,6 +14,10 @@ const Posts = () => {
     ...new Set(images.map((image) => image.place)),
   ];
   const [catList, setCatList] = useState(images);
+
+  const list1 = catList.filter((x) => x.id % 2);
+  const list2 = catList.filter((x) => x.id % 2 === 0);
+
   const categories = allImages;
   const places = allplaces;
 
@@ -42,6 +46,11 @@ const Posts = () => {
   useEffect(() => {
     setTimeout(() => setLoading(false), 3000);
   }, []);
+
+  console.log(catList);
+
+  console.log(list1);
+  console.log(list2);
 
   return (
     <>
@@ -93,27 +102,27 @@ const Posts = () => {
             </div>
 
             <div className="image-container">
-              {catList && (
-                <div>
-                  {catList.map((data) => {
-                    return (
-                      <div className="img-sec">
-                        {data.id % 2 && (
-                          <div key={data.id} className="image">
-                            <img src={data.image} alt={data.place} />
-                          </div>
-                        )}
-                        {data.id % 2 === 0 && (
-                          <div key={data.id} className="image-2">
-                            <img src={data.image} alt={data.place} />
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
+              <div className="lists">
+                {list1.map((data) => {
+                  return (
+                    <div key={data.id} className="image">
+                      <img src={data.image} alt={data.place} />
+                    </div>
+                  );
+                })}
+              </div>
 
+              <div className="lists">
+                {list2.map((data) => {
+                 return <div>
+                    {data ? (
+                    <div key={data.id} className="image">
+                      <img src={data.image} alt={data.place} />
+                    </div>
+                  ) : " "}
+                  </div>
+                })}
+              </div>
             </div>
 
             <Footer />
