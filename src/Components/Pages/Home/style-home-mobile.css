@@ -1,0 +1,240 @@
+/* home Part1 */
+
+@media (max-width: 1200px) {
+  .HomePart1 {
+    margin: 20px 0px;
+  }
+  .HomePart1 p {
+    width: 90%;
+  }
+  .part1-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+  .part1-container .part1-lt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+  }
+  .part1-container .part1-lt i {
+    margin: 20px;
+  }
+
+  .part1-container .part1-rt {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .part1-container .part1-rt .pic {
+    display: none;
+  }
+  .part1-container .part1-rt .texts {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0px;
+  }
+  .part1-container .part1-rt .texts h1 {
+    font-size: 60px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .part1-container .part1-rt .texts p {
+    margin: 20px 0px;
+  }
+}
+@media (max-width: 900px) {
+  .HomePart1 p {
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+  }
+  .part1-container .part1-rt .texts h1 {
+    font-size: 45px;
+  }
+
+  .part1-container .part1-lt i {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .part1-container .part1-rt .texts p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .part1-container .part1-rt .texts h2 {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .HomePart1 p {
+    font-size: 10px;
+  }
+}
+
+/* Home Part2  */
+@media (max-width: 1100px) {
+  .HomePart2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    height: fit-content;
+  }
+  .card {
+    margin: 20px;
+  }
+}
+/* Home Part3  */
+
+@media (max-width: 800px) {
+  .HomePart3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .HomePart3 .sec1 {
+    width: 90%;
+    margin: auto;
+  }
+  .HomePart3 .sec1 .blog {
+    padding: 30px 0px;
+  }
+  .HomePart3 .sec1 .blog .blog-text h1 {
+    text-align: center;
+  }
+  .HomePart3 .sec2 {
+    width: 90%;
+    margin: 30px auto;
+  }
+  .HomePart3 .sec2 .sec2-visits {
+    margin-top: 20px;
+  }
+  .HomePart3 .sec2 .sec2-visits p {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+  .sec2-posts h3 {
+    width: fit-content;
+  }
+  .sec2-posts .vlogs-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sec2-posts .vlogs-link .vlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .HomePart3 .sec1 .blog .blog-text .blog-link {
+    flex-direction: column;
+  }
+  .HomePart3 .sec1 .blog .blog-text .blog-link h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .HomePart3 .sec1 .blog .blog-text p {
+    color: var(--main-text);
+    text-indent: 30px;
+    margin-top: 10px;
+  }
+  .HomePart3 .sec1 .blog:last-child {
+    margin-bottom: 30px;
+  }
+  .HomePart3 .sec2 .sec2-visits p {
+    font-size: 25px;
+    margin-top: 30px;
+    border-bottom: 2px dashed var(--main-text);
+    width: fit-content;
+  }
+}
+
+/* Home Part4 */
+@media (max-width: 600px) {
+  .homePart4 {
+    flex-direction: column;
+    margin: 30px 0px;
+  }
+  .homePart4 p {
+    display: none;
+  }
+  .homePart4 .content {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .homePart4 .content .Part1 {
+    flex-direction: column;
+  }
+  .homePart4 .content .Part1 img {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+  }
+  .homePart4 .content .Part1 .texts {
+    width: 100%;
+  }
+  .Part1 .texts h1 {
+    font-size: 35px;
+    line-height: normal;
+    text-align: center;
+  }
+  .Part1 .texts p {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    text-indent: 0px;
+  }
+  .Part1 .texts h2 {
+    text-align: center;
+  }
+  .homePart4 .content .Part2 {
+    width: 100%;
+  }
+  .homePart4 .content .Part2 .content {
+    flex-direction: row;
+    height: 40px;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* part 5 */
+@media (max-width: 600px) {
+  .HomePart5 h1,
+  .HomePart5 p {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+  }
+  .HomePart5 .inputs{
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+  }
+  .HomePart5 .inputs input {
+      width: 90%;
+      margin: auto;
+      padding: 8px 10px;
+      font-size: 18px;
+  }
+  .HomePart5 .inputs button {
+      margin-top: 20px;
+  }
+
+}

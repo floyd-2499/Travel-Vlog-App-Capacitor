@@ -1,0 +1,159 @@
+:root {
+  --bg-color: #ff6a95;
+  --text-color: #ffffff;
+  --dark-color: #3a3335;
+  --smbg-color: #fdf0d5;
+  --card-text-head: #d81e5b;
+  --card-rest: #c6d8d3;
+  --card-sm-text: #eb5e55;
+  --main-text: #598176;
+  --highlight: #ff4778;
+  --icon: #bdd0cb;
+  --date: #b9cdc7;
+
+  /* font family */
+  --text-link: Almendra;
+  --card-head: Amatic SC;
+}
+
+/* header */
+
+.head-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:  87%;
+  margin: auto;
+}
+.head-content img {
+  height: 70px;
+  margin-top: 10px;
+}
+.nav-icon i {
+  font-size: 40px;
+  color: var(--highlight);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* links */
+.links {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 20%;
+  height: 100vh;
+  background-color: var(--main-text);
+  transition-delay: .25s;
+}
+.links i {
+  width: 80%;
+  text-align: right;
+  margin: 50px auto;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.links .navs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 70%;
+  width: 100%;
+}
+.links .navs a{
+  text-decoration: none;
+}
+
+.links .navs a h1 {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.links .navs a h1:hover ,
+.links i:hover {
+  color: var(--smbg-color);
+}
+
+/* Footer */
+.footer { 
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  min-height: fit-content;
+  min-height: fit-content;
+}
+.foot-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 25%;
+}
+.foot-part1-top {
+  text-align: center;
+}
+.foot-part1-top img {
+  height: 70px;
+  margin: 20px 0px;
+}
+.foot-part1-top p,
+.foot-part1-last p {
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-family: "Almendra", serif;
+  color: var(--dark-color);
+}
+.foot-part1-last p {
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+}
+
+.foot-part2 {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  background-color: var(--bg-color);
+}
+.foot-part2-lt {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+/* a === Link tag */
+.foot-part2-lt a {
+  text-decoration: none;
+  font-size: 34px;
+  color: #fff;
+  text-decoration: none;
+  width: 250px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Almendra", serif;
+}
+
+.foot-part2-rt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  margin: auto;
+  width: 10%;
+} 
+.foot-part2-rt i{
+  font-size: 30px;
+  color: #FFF0F4;
+}
+
+.last {
+  display: none;
+}
